@@ -13,7 +13,7 @@
                 <h1>&#128397; <span> Paint Online </span></h1>
             </div>
 
-            <a href="./galeria.html"> Mira la galeria aqui </a>
+            <a href="./galeria.html"> Mira la galeria de ejemplos aqui </a>
             <div></div>
             <div></div>
         </header>
@@ -33,17 +33,17 @@
                 colorido = createColorPicker("#d532e7").parent(menuColor);
                 createSpan("Grosor ").parent(menuGrosor);
                 grosor = createSelect().parent(menuGrosor);
-                grosor.option("Thin", 1);
-                grosor.option("Extra Light", 2);
-                grosor.option("Light", 3);
-                grosor.option("Normal", 4);
-                grosor.option("Medium", 5);
-                grosor.option("Semi Bold", 6);
-                grosor.option("Bold", 7);
-                grosor.option("Extra Bold", 8);
-                grosor.option("Black", 9);
+                grosor.option("Grosor 1(el + delgado)", 1);
+                grosor.option("Grosor 2", 2);
+                grosor.option("Grosor 3", 3);
+                grosor.option("Grosor 4", 4);
+                grosor.option("Grosor 5 (punto medio)", 5);
+                grosor.option("Grosor 6", 6);
+                grosor.option("Grosor 7", 7);
+                grosor.option("Grosor 8", 8);
+                grosor.option("Grosor 9 (el + grueso)", 9);
                 grosor.selected(4);
-                descarga = createButton("Descargar").parent(main);
+                descarga = createButton("Descargar imagen").parent(main);
                 descarga.mousePressed(descargar);
                 createCanvas(windowWidth, windowHeight).position(0, 0).style("z-index", -1);
                 background(240);
@@ -60,11 +60,11 @@
             }
 
             function descargar() {
-                  saveCanvas("dibujo", "jpg");
+                  saveCanvas("Mi dibujo", "jpg");
             }
             
             function instructivo(){
-                alert("Hola! Paint Online es una herramienta básica de dibujo online, donde puedes dibujar lo que quieras y transformarlo rápidamente en una imagen descargable. Por ejemplo, puedes usarlo para dibujar un bocetos y que no se te vaya una idea, o notas, apuntes, o algo mas desarrollado si te animas...")
+                alert("Hola! Paint Online es una herramienta básica de dibujo online, donde puedes dibujar lo que quieras y transformarlo rápidamente en una imagen descargable. Por ejemplo, puedes usarlo para dibujar un boceto y que no se te vaya una idea, o para tomar notas, apuntes visuales, o incluso algo mas desarrollado si te animas. Utiliza la caja de color para escoger el que prefieras, y la herramienta grosor para esocger el tipo de linea");
             }
         </script>
 
